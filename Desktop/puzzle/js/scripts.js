@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("form.phrases").submit(function(event) {
     event.preventDefault();
 
-    var userPhrase = "If the grass is greener on the other side, you can bet the water bill is higher.";
+    var userPhrase = $('.ui1').val();
     console.log(userPhrase);
 
     var characters = [];
@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     console.log(characters);
 
-    //needed triple equals to assign 
+    //needed triple equals to assign
     characters.forEach(function(character) {
       if ((character.toLowerCase() === "a") || (character.toLowerCase() === "e") || (character.toLowerCase() === "i") || (character.toLowerCase() === "o") || (character.toLowerCase() === "u")) {
       // if (character === "a") {
